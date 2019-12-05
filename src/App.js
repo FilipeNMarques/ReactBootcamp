@@ -1,11 +1,13 @@
 import React from 'react'
+//Style
 import '../src/App.css'
-import profile from './assets/avatar.jpeg'
+//Components
+import TechList from './components/TachList'
+
 
 function App() {
-  return (<div>
-    <h1>Hello from first component :))</h1>
-    <img src={profile} alt="" />
-  </div>)
+  return (
+    <TechList />
+  )
 }
 export default App
