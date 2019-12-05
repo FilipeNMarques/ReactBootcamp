@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Techitem from './TechItem';
+import TechItem from './TechItem';
 
 
 class TechList extends Component {
@@ -42,12 +42,13 @@ class TechList extends Component {
         <h3>Tecnogias</h3>
         < ul >
           {this.state.techs.map(tech => (
-            <Techitem
+            <TechItem
               key={tech}
               tech={tech}
               onDelete={() => this.handleDelete(tech)}
             />
           ))}
+          <TechItem />
         </ul >
         <input
           type="text"
